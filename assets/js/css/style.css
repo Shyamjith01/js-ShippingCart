@@ -1,0 +1,21 @@
+#showcase{
+    height: 100vh;
+    background: url('./images/pexels-pixabay-35550.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+#showcase .container .col-lg-3{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+footer{
+    background-color: #000;
+    padding: 19px;
+    text-align: center;
+    color: #ffff;
+}
