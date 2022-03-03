@@ -1,9 +1,25 @@
 #showcase{
     height: 100vh;
-    background: url('./images/pexels-pixabay-35550.jpg');
+    background: url('https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
     background-attachment: fixed;
    
+}
+@media (max-width:640px) {
+    #showcase{
+        background: url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    }
+    
+}
+.topHeader{
+    font-size: 22px !important;
+    font-weight: 500;
+}
+
+
+.siteHeader1{
+    font-size: 29px;
+    font-weight: 800;
 }
 #showcase .container .col-lg-3{
     display: flex;
@@ -18,4 +34,24 @@ footer{
     padding: 19px;
     text-align: center;
     color: #ffff;
+}
+.proImg{
+    height: 19rem;
+    object-fit: cover;
+}
+.card-body{
+    background-color: #f8f9fa !important;
+}
+
+.orangeBtn{
+    border: none !important;
+    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%) !important;
+}
+
+.headerPro{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
 }

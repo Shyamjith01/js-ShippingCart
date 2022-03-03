@@ -16,8 +16,9 @@
 <body>
     <nav class="navbar navbar-white fixed-top bg-dark">
         <div class="container-fluid text-white">
-            <a class="navbar-brand">Navbar</a>
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#CartModal">Cart</button>
+            <a class="topHeader navbar-brand">shoppingCart</a>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#CartModal"
+                onclick="renderCart()">Cart</button>
         </div>
     </nav>
     <section id="showcase">
@@ -25,8 +26,8 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div>
-                        <h2>Start shopping Today</h2>
-                        <a href="#products"><button class="btn btn-primary btn-lg">Explore</button></a>
+                        <h2 class="siteHeader1 text-white">Start shopping Today</h2>
+                        <a href="#products"><button class="orangeBtn btn btn-primary btn-lg">Explore</button></a>
                     </div>
                 </div>
             </div>
@@ -35,10 +36,10 @@
     </section>
 
     <section id="products" class="mt-5">
-        <h2 class="text-center">Products</h2>
+        <h2 class="headerPro text-center">Products</h2>
         <div class="container">
             <div class="row">
-                
+
 
             </div>
         </div>
@@ -58,58 +59,26 @@
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                
+
+
+
+
                 <div class="modal-body">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./assets/js/css/images/pro1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./assets/js/css/images/pro1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./assets/js/css/images/pro1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
                 <div class="modal-footer">
+                    <h4 id="cartTotal"></h4>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Checkout</button>
+                    <a id="mainBtn"><button type="button" class="btn btn-primary"
+                            onclick="handleCheckout()">Checkout</button></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="./assets/js/main.js" ></script>
+    <script src="./assets/js/main.js"></script>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -121,7 +90,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
